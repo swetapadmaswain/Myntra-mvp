@@ -163,6 +163,9 @@ export const catalogProducts = [
   { id: 'c_10', brand: 'Peppermint', name: 'Girls Denim Dungarees', price: 999, mrp: 1599, discount: 37, size: '6-7Y', category: 'Kids', image: 'https://loremflickr.com/400/600/kids,dungarees' },
   { id: 'c_11', brand: 'Maybelline', name: 'Fit Me Foundation', price: 449, mrp: 699, discount: 35, size: '30ml', category: 'Beauty', image: 'https://loremflickr.com/400/600/makeup,foundation' },
   { id: 'c_12', brand: 'Westside Home', name: 'Cotton Bedsheet Set', price: 1299, mrp: 2199, discount: 40, size: 'King', category: 'Home', image: 'https://loremflickr.com/400/600/bedsheet,cotton' },
+  { id: 'c_13', brand: 'Fossil', name: 'Minimalist Analog Watch', price: 2499, mrp: 3499, discount: 28, size: 'One Size', category: 'Accessories', image: 'https://loremflickr.com/400/600/mens,watch' },
+  { id: 'c_14', brand: 'Ray-Ban', name: 'Classic Aviator Sunglasses', price: 1899, mrp: 2999, discount: 36, size: 'One Size', category: 'Accessories', image: 'https://loremflickr.com/400/600/sunglasses,aviator' },
+  { id: 'c_15', brand: 'Lavie', name: 'Leather Tote Bag', price: 1599, mrp: 2599, discount: 38, size: 'One Size', category: 'Accessories', image: 'https://loremflickr.com/400/600/tote,bag' },
 ]
 
 export const formatINR = (value) => `₹${value.toLocaleString('en-IN')}`

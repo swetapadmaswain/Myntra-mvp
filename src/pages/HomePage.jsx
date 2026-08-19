@@ -79,7 +79,7 @@ function NudgeCard() {
 }
 
 function CategoryGrid() {
-  const labels = ['Men', 'Women', 'Kids', 'Home', 'Beauty']
+  const labels = ['Men', 'Women', 'Kids', 'Home', 'Beauty', 'Accessories']
   return (
     <div className="grid grid-cols-3 gap-2 px-4 py-4">
       {labels.map((label) => (

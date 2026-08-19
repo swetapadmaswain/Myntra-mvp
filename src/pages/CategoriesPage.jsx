@@ -5,7 +5,7 @@ import BottomNav from '../components/BottomNav'
 import { useApp } from '../context/AppContext'
 import { catalogProducts } from '../data/mockData'
 
-const categories = ['All', 'Men', 'Women', 'Kids', 'Home', 'Beauty']
+const categories = ['All', 'Men', 'Women', 'Kids', 'Home', 'Beauty', 'Accessories']
 
 function Header() {
   const { bagCount } = useApp()
@@ -37,7 +37,7 @@ export default function CategoriesPage() {
   const [searchParams, setSearchParams] = useSearchParams()
   const activeCategory = searchParams.get('cat') || 'All'
   const { toggleWishlist, wishlist } = useApp()
-  const uniqueCategories = ['Men', 'Women', 'Kids', 'Home', 'Beauty']
+  const uniqueCategories = ['Men', 'Women', 'Kids', 'Home', 'Beauty', 'Accessories']
 
   const productsByCategory = uniqueCategories.map((cat) => ({
     category: cat,

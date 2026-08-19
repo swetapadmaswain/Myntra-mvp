@@ -1,10 +1,9 @@
-import { Heart, LayoutGrid, Play, ShoppingBag, User } from 'lucide-react'
+import { Heart, LayoutGrid, ShoppingBag, User } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 const tabs = [
   { key: 'myntra', label: 'Myntra', to: '/', icon: null },
   { key: 'categories', label: 'Categories', to: '/categories', icon: LayoutGrid },
-  { key: 'studio', label: 'Studio', to: '/studio', icon: Play },
   { key: 'wishlist', label: 'Wishlist', to: '/wishlist', icon: Heart },
   { key: 'cart', label: 'Bag', to: '/cart', icon: ShoppingBag },
 ]
