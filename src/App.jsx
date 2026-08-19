@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage'
 import WishlistPage from './pages/WishlistPage'
 import CartPage from './pages/CartPage'
 import BillingPage from './pages/BillingPage'
+import CategoriesPage from './pages/CategoriesPage'
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
           <Route path="/wishlist" element={<WishlistPage />} />
           <Route path="/cart" element={<CartPage />} />
           <Route path="/billing" element={<BillingPage />} />
+          <Route path="/categories" element={<CategoriesPage />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>

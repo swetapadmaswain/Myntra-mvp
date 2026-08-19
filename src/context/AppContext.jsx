@@ -46,6 +46,24 @@ export function AppProvider({ children }) {
     setWishlist((prev) => prev.map((item) => (item.id === id ? { ...item, size } : item)))
   }
 
+  const addToWishlist = (product) => {
+    if (wishlist.some((item) => item.id === product.id)) return
+    setWishlist((prev) => [...prev, { ...product }])
+    showToast('Added to wishlist')
+  }
+
+  const toggleWishlist = (product) => {
+    const exists = wishlist.some((item) => item.id === product.id)
+    if (exists) {
+      setWishlist((prev) => prev.filter((item) => item.id !== product.id))
+      showToast('Removed from wishlist')
+    } else {
+      addToWishlist(product)
+    }
+  }
+
+  const isInWishlist = (id) => wishlist.some((item) => item.id === id)
+
   const removeFromBag = (id) => {
     setBag((prev) => prev.filter((item) => item.id !== id))
   }
@@ -67,6 +85,9 @@ export function AppProvider({ children }) {
       moveItemToBag,
       removeFromWishlist,
       updateWishlistSize,
+      addToWishlist,
+      toggleWishlist,
+      isInWishlist,
       removeFromBag,
       showToast,
       setToast,
