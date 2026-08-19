@@ -22,7 +22,7 @@ export const styleStudioResponse = {
           size: 'M',
           price: 899,
           image:
-            'https://picsum.photos/seed/w_1/400/600',
+      "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp",
           source: 'wishlist',
         },
         {
@@ -33,7 +33,7 @@ export const styleStudioResponse = {
           size: '32',
           price: 1299,
           image:
-            'https://picsum.photos/seed/w_2/400/600',
+      "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/1.webp",
           source: 'wishlist',
         },
         {
@@ -44,7 +44,7 @@ export const styleStudioResponse = {
           size: 'UK 8',
           price: 1299,
           image:
-            'https://picsum.photos/seed/w_3/400/600',
+      "https://cdn.dummyjson.com/product-images/beauty/powder-canister/1.webp",
           source: 'catalog_recommendation',
         },
       ],
@@ -63,7 +63,7 @@ export const styleStudioResponse = {
           size: 'M',
           price: 1499,
           image:
-            'https://picsum.photos/seed/w_4/400/600',
+      "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/1.webp",
           source: 'wishlist',
         },
         {
@@ -74,7 +74,7 @@ export const styleStudioResponse = {
           size: '32',
           price: 1799,
           image:
-            'https://picsum.photos/seed/w_5/400/600',
+      "https://cdn.dummyjson.com/product-images/beauty/red-nail-polish/1.webp",
           source: 'catalog_recommendation',
         },
         {
@@ -85,7 +85,7 @@ export const styleStudioResponse = {
           size: 'UK 8',
           price: 899,
           image:
-            'https://picsum.photos/seed/w_6/400/600',
+      "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/1.webp",
           source: 'wishlist',
         },
       ],
@@ -103,7 +103,7 @@ export const wishlistItems = [
     discount: 40,
     size: 'M',
     image:
-      'https://picsum.photos/seed/w_7/400/600',
+      "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/1.webp",
   },
   {
     id: 'w_2',
@@ -114,7 +114,7 @@ export const wishlistItems = [
     discount: 41,
     size: '32',
     image:
-      'https://picsum.photos/seed/w_8/400/600',
+      "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/1.webp",
   },
   {
     id: 'w_3',
@@ -125,7 +125,7 @@ export const wishlistItems = [
     discount: 34,
     size: 'M',
     image:
-      'https://picsum.photos/seed/w_9/400/600',
+      "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/1.webp",
   },
   {
     id: 'w_4',
@@ -136,7 +136,7 @@ export const wishlistItems = [
     discount: 55,
     size: 'UK 8',
     image:
-      'https://picsum.photos/seed/w_10/400/600',
+      "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/1.webp",
   },
   {
     id: 'w_5',
@@ -147,7 +147,7 @@ export const wishlistItems = [
     discount: 33,
     size: 'M',
     image:
-      'https://picsum.photos/seed/w_11/400/600',
+      "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/1.webp",
   },
   {
     id: 'w_6',
@@ -158,7 +158,7 @@ export const wishlistItems = [
     discount: 33,
     size: 'M',
     image:
-      'https://picsum.photos/seed/w_12/400/600',
+      "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/1.webp",
   },
 ]
 

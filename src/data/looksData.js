@@ -12,7 +12,7 @@ export const boughtItems = [
     style: 'casual',
     boughtWhen: 'June',
     image:
-      'https://picsum.photos/seed/l_1/400/600',
+      "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp",
     source: 'bought',
   },
   {
@@ -26,7 +26,7 @@ export const boughtItems = [
     style: 'casual',
     boughtWhen: 'May',
     image:
-      'https://picsum.photos/seed/l_2/400/600',
+      "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/1.webp",
     source: 'bought',
   },
   {
@@ -40,7 +40,7 @@ export const boughtItems = [
     style: 'formal',
     boughtWhen: 'April',
     image:
-      'https://picsum.photos/seed/l_3/400/600',
+      "https://cdn.dummyjson.com/product-images/beauty/powder-canister/1.webp",
     source: 'bought',
   },
 ]
@@ -56,7 +56,7 @@ export const trendingBasics = [
     category: 'Footwear',
     style: 'casual',
     image:
-      'https://picsum.photos/seed/l_4/400/600',
+      "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/1.webp",
     source: 'trending_basic',
   },
   {
@@ -69,7 +69,7 @@ export const trendingBasics = [
     category: 'Bottom',
     style: 'casual',
     image:
-      'https://picsum.photos/seed/l_5/400/600',
+      "https://cdn.dummyjson.com/product-images/beauty/red-nail-polish/1.webp",
     source: 'trending_basic',
   },
   {
@@ -82,7 +82,7 @@ export const trendingBasics = [
     category: 'Footwear',
     style: 'formal',
     image:
-      'https://picsum.photos/seed/l_6/400/600',
+      "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/1.webp",
     source: 'trending_basic',
   },
   {
@@ -95,7 +95,7 @@ export const trendingBasics = [
     category: 'Bottom',
     style: 'formal',
     image:
-      'https://picsum.photos/seed/l_7/400/600',
+      "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/1.webp",
     source: 'trending_basic',
   },
   {
@@ -108,7 +108,7 @@ export const trendingBasics = [
     category: 'Top',
     style: 'sporty',
     image:
-      'https://picsum.photos/seed/l_8/400/600',
+      "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/1.webp",
     source: 'trending_basic',
   },
 ]
