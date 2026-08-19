@@ -48,37 +48,69 @@ Each card displays:
 - If the product already exists, it removes it; otherwise it calls `addToWishlist`.
 - Useful for heart icons on product cards.
 
-## 9. Style Studio / Look Generation
-- Looks are built automatically from the wishlist using `buildLooks(wishlist)` in `looksData.js`.
-- The result is memoised in `AppContext.jsx` with `useMemo`.
-- For every wishlist item, the algorithm builds a complete outfit using the rules below.
+## 9. Style Studio — New Wishlist Feature (PM View)
 
-### 9.1 Category Detection
-`detectCategory(name)` in `looksData.js` classifies an item as:
-- **Top** — if the name contains `tee, shirt, polo, blazer, sweater, hoodie, tank, kurta, tunic, top`.
-- **Bottom** — if it contains `trouser, pant, jean, short, cargo, chino, jogger, legging, bottom`.
-- **Footwear** — if it contains `sneaker, shoe, derby, loafer, boot, sandal, flip`.
-- Defaults to `Top` if no keyword matches.
+### 9.1 What is Style Studio?
+- A wishlist-powered outfit generator that turns one saved item into a complete look.
+- Users do not need to browse or match products manually; the app suggests a full outfit in one tap.
+- It lives on the `/wishlist` page inside `StyleStudioHero.jsx` and is driven by `buildLooks(wishlist)` in `looksData.js`.
 
-### 9.2 Style Detection
-`detectStyle(name)` assigns a style:
-- **formal** — for `blazer, linen, chino, derby, formal, oxford`.
-- **sporty** — for `dri-fit, training, gym, sport, dry`.
-- Defaults to **casual**.
+### 9.2 User Problem It Solves
+- Wishlists often contain random one-off items (e.g., only a t-shirt or only sneakers), so the user cannot visualise how to wear them.
+- Buying a single item does not drive AOV (average order value); a complete look does.
+- Manually browsing for matching tops, bottoms, and shoes is time-consuming and leads to drop-off.
 
-### 9.3 Picking Complements
-For each look, the algorithm starts with a **seed** wishlist item, then tries to find one item each for the two missing categories among:
-1. Other wishlist items with the same category and style.
-2. `boughtItems` (user’s past purchases) with the same category and style.
-3. `trendingBasics` (popular Myntra basics) with the same category and style.
-4. Any `trendingBasics` item in the missing category as a final neutral fallback.
+### 9.3 Product Value
+- **Conversion**: turns a single saved item into a 3-piece bundle the user can add to the bag instantly.
+- **Engagement**: gives users a reason to revisit the wishlist beyond price tracking.
+- **Personalisation**: the algorithm respects the user’s own saved items first, then falls back to items the user already bought, then to trending basics.
 
-### 9.4 Look Theme
-The look title is generated dynamically:
-- Footwear seed → `Complete the look for your {style} {brand}`.
-- Bought complement used → `Styled with something you bought in {month}`.
-- Trending basic used → `Trending basics picked for you`.
-- Default → `Styled around your {brand} {category}`.
+### 9.4 How the Algorithm Works
+For every wishlist item, Style Studio acts as the **seed** of a new outfit:
+
+1. **Classify the seed** with `detectCategory(name)`:
+   - **Top** — `tee, shirt, polo, blazer, sweater, hoodie, tank, kurta, tunic, top`.
+   - **Bottom** — `trouser, pant, jean, short, cargo, chino, jogger, legging, bottom`.
+   - **Footwear** — `sneaker, shoe, derby, loafer, boot, sandal, flip`.
+   - Defaults to `Top` if no keyword is found.
+
+2. **Detect the style** with `detectStyle(name)`:
+   - **formal** — `blazer, linen, chino, derby, formal, oxford`.
+   - **sporty** — `dri-fit, training, gym, sport, dry`.
+   - Defaults to **casual**.
+
+3. **Find two missing categories** (e.g., if the seed is a Top, the algorithm looks for a Bottom and Footwear).
+
+4. **Pick the best complement** in this order:
+   1. Another wishlist item matching the missing category **and** the seed’s style.
+   2. An item from the user’s **past purchases** (`boughtItems`) matching the missing category and style.
+   3. A **trending basic** from Myntra’s catalog matching the missing category and style.
+   4. Any trending basic in the missing category as a final neutral fallback.
+
+### 9.5 Edge Case: Old Purchases Fill the Gaps
+- This is the critical fallback: the user may not have enough complementary items in their wishlist.
+- If the wishlist cannot complete a full outfit, Style Studio pairs the wishlist item with something the user has already bought (e.g., *“Pair this shirt with the black jeans you bought in June.”*).
+- If no relevant past purchase exists, it falls back to high-converting trending basics (e.g., plain white sneakers, blue denim).
+- This ensures **every seed produces a complete, wearable look**, regardless of how many items the user has saved.
+
+### 9.6 Example User Flow
+- User saves a **Roadster Graphic Print Oversized Tee**.
+- Style Studio detects it is a **casual Top**.
+- It searches the wishlist for a casual Bottom and Footwear.
+- If those are not in the wishlist, it pulls the user’s **bought black jeans** and a **trending white sneaker**.
+- The result is a 3-piece look: *Graphic Tee + Black Jeans + White Sneakers*.
+
+### 9.7 Look Theme Copy
+Each look gets a human-readable title to make the suggestion feel curated:
+- **Footwear as the seed** → `Complete the look for your {style} {brand}`.
+- **Past purchase used** → `Styled with something you bought in {month}`.
+- **Trending basic used** → `Trending basics picked for you`.
+- **Default** → `Styled around your {brand} {category}`.
+
+### 9.8 Outcome
+- The look is rendered as a horizontal scrollable card on the wishlist page.
+- It contains item thumbnails, brand names, prices, a total look price, and MRP savings.
+- Users can add the entire look to the bag with one tap (see Section 10).
 
 ## 10. Adding a Full Look to the Bag
 - Each generated look card has an **Add Look to Bag** button.
