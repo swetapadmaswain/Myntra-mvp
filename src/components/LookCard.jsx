@@ -1,9 +1,21 @@
-import { Check, Plus, Sparkles } from 'lucide-react'
+import { Check, Plus, Sparkles, ShoppingBag, TrendingUp } from 'lucide-react'
 import ProductImage from './ProductImage'
 import { formatINR } from '../data/mockData'
 
+function badgeFor(item) {
+  if (item.source === 'trending_basic')
+    return { text: 'Trending basic', Icon: TrendingUp, className: 'bg-emerald-600' }
+  if (item.source === 'bought')
+    return {
+      text: `Bought in ${item.boughtWhen || 'past'}`,
+      Icon: ShoppingBag,
+      className: 'bg-myntra-dark/90',
+    }
+  return null
+}
+
 function ItemThumb({ item }) {
-  const isNew = item.source === 'catalog_recommendation'
+  const badge = badgeFor(item)
 
   return (
     <div className="flex-1">
@@ -13,9 +25,12 @@ function ItemThumb({ item }) {
           alt={item.category}
           className="h-28 w-full"
         />
-        {isNew && (
-          <span className="absolute left-1 top-1 rounded-md bg-myntra-dark/90 px-1.5 py-0.5 text-[9px] font-semibold uppercase tracking-wide text-white">
-            New match
+        {badge && (
+          <span
+            className={`absolute left-1 top-1 flex items-center gap-1 rounded-md px-1.5 py-0.5 text-[9px] font-semibold uppercase tracking-wide text-white ${badge.className}`}
+          >
+            <badge.Icon size={10} />
+            {badge.text}
           </span>
         )}
       </div>
@@ -28,16 +43,22 @@ function ItemThumb({ item }) {
 
 export default function LookCard({ look, added, onAdd }) {
   const savings = look.mrp - look.totalPrice
+  const hasFallback = look.fallback
 
   return (
-    <article className="w-[19rem] shrink-0 snap-center rounded-2xl bg-white p-4 shadow-look">
+    <article className="w-[19rem] shrink-0 snap-center rounded-2xl border border-myntra-line/60 bg-white p-4 shadow-look">
       <div className="mb-3 flex items-center justify-between">
         <span className="inline-flex items-center gap-1 rounded-full bg-myntra-pink/10 px-2 py-1 text-[10px] font-bold uppercase tracking-wide text-myntra-pink">
           <Sparkles size={11} />
           {look.theme}
         </span>
-        <span className="text-[10px] text-myntra-grey">{look.items.length} pieces</span>
+        <span className="text-[10px] font-semibold text-myntra-grey">{look.items.length} pieces</span>
       </div>
+      {hasFallback && (
+        <p className="mb-2 text-[10px] leading-4 text-myntra-pink">
+          We paired a wishlist item with basics so the look always works.
+        </p>
+      )}
 
       <div className="flex items-start gap-1">
         {look.items.map((item, index) => (

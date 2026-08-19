@@ -1,11 +1,12 @@
 import { createContext, useContext, useState, useMemo } from 'react'
-import { styleStudioResponse, wishlistItems, formatINR } from '../data/mockData'
+import { wishlistItems, formatINR } from '../data/mockData'
+import { buildLooks } from '../data/looksData'
 
 const AppContext = createContext(null)
 
 export function AppProvider({ children }) {
   const [wishlist, setWishlist] = useState(wishlistItems)
-  const [looks, setLooks] = useState(styleStudioResponse.recommendedLooks)
+  const looks = useMemo(() => buildLooks(wishlist), [wishlist])
   const [addedLookIds, setAddedLookIds] = useState([])
   const [movedItemIds, setMovedItemIds] = useState([])
   const [bag, setBag] = useState([])
@@ -41,6 +42,10 @@ export function AppProvider({ children }) {
     showToast('Removed from wishlist')
   }
 
+  const updateWishlistSize = (id, size) => {
+    setWishlist((prev) => prev.map((item) => (item.id === id ? { ...item, size } : item)))
+  }
+
   const removeFromBag = (id) => {
     setBag((prev) => prev.filter((item) => item.id !== id))
   }
@@ -61,6 +66,7 @@ export function AppProvider({ children }) {
       addLookToBag,
       moveItemToBag,
       removeFromWishlist,
+      updateWishlistSize,
       removeFromBag,
       showToast,
       setToast,

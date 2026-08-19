@@ -1,8 +1,12 @@
 import { X } from 'lucide-react'
 import ProductImage from './ProductImage'
+import { useApp } from '../context/AppContext'
 import { formatINR } from '../data/mockData'
 
+const sizes = ['XS','S','M','L','XL','28','30','32','34','UK 6','UK 7','UK 8','UK 9','UK 10']
+
 function WishlistCard({ item, moved, onMove, onRemove }) {
+  const { updateWishlistSize } = useApp()
   return (
     <article className="flex flex-col overflow-hidden bg-white shadow-card">
       <div className="relative">
@@ -18,9 +22,20 @@ function WishlistCard({ item, moved, onMove, onRemove }) {
         >
           <X size={13} strokeWidth={2.5} />
         </button>
-        <span className="absolute bottom-1.5 left-1.5 rounded-sm bg-white/95 px-1.5 py-0.5 text-[10px] font-semibold text-myntra-dark">
-          Size: {item.size}
-        </span>
+        <div className="absolute bottom-1.5 left-1.5 flex items-center gap-1 rounded-sm bg-white/95 px-1.5 py-0.5">
+          <span className="text-[10px] font-semibold text-myntra-dark">Size:</span>
+          <select
+            value={item.size}
+            onChange={(e) => updateWishlistSize(item.id, e.target.value)}
+            className="max-w-[4.2rem] appearance-none bg-transparent text-[10px] font-semibold text-myntra-dark outline-none"
+          >
+            {sizes.map((s) => (
+              <option key={s} value={s}>
+                {s}
+              </option>
+            ))}
+          </select>
+        </div>
       </div>
 
       <div className="flex-1 px-2.5 pt-2">
