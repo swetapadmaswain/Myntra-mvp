@@ -46,12 +46,6 @@ export function AppProvider({ children }) {
     setWishlist((prev) => prev.map((item) => (item.id === id ? { ...item, size } : item)))
   }
 
-  const addToBag = (product) => {
-    if (bag.some((b) => b.id === product.id)) return
-    setBag((prev) => [...prev, { ...product, source: 'catalog' }])
-    showToast('Added to bag')
-  }
-
   const addToWishlist = (product) => {
     if (wishlist.some((item) => item.id === product.id)) return
     setWishlist((prev) => [...prev, { ...product }])
@@ -94,7 +88,6 @@ export function AppProvider({ children }) {
       addToWishlist,
       toggleWishlist,
       isInWishlist,
-      addToBag,
       removeFromBag,
       showToast,
       setToast,
