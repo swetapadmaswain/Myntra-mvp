@@ -82,14 +82,19 @@ function CategoryGrid() {
   const labels = ['Men', 'Women', 'Kids', 'Home', 'Beauty', 'Studio']
   return (
     <div className="grid grid-cols-3 gap-2 px-4 py-4">
-      {labels.map((label) => (
-        <div
-          key={label}
-          className="flex aspect-[4/3] items-center justify-center rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-300 text-xs font-bold text-myntra-dark"
-        >
-          {label}
-        </div>
-      ))}
+      {labels.map((label) => {
+        const to =
+          label === 'Studio' ? '/wishlist' : `/categories?cat=${label}`
+        return (
+          <Link
+            key={label}
+            to={to}
+            className="flex aspect-[4/3] items-center justify-center rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-300 text-xs font-bold text-myntra-dark active:scale-95 transition-transform"
+          >
+            {label}
+          </Link>
+        )
+      })}
     </div>
   )
 }

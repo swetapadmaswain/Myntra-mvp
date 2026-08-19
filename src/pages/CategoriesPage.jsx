@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, useSearchParams } from 'react-router-dom'
 import { ChevronLeft, Search, ShoppingBag } from 'lucide-react'
 import ProductCard from '../components/ProductCard'
 import BottomNav from '../components/BottomNav'
@@ -35,7 +34,8 @@ function Header() {
 }
 
 export default function CategoriesPage() {
-  const [activeCategory, setActiveCategory] = useState('All')
+  const [searchParams, setSearchParams] = useSearchParams()
+  const activeCategory = searchParams.get('cat') || 'All'
   const { toggleWishlist, wishlist } = useApp()
   const uniqueCategories = ['Men', 'Women', 'Kids', 'Home', 'Beauty']
 
@@ -57,7 +57,7 @@ export default function CategoriesPage() {
         {categories.map((cat) => (
           <button
             key={cat}
-            onClick={() => setActiveCategory(cat)}
+            onClick={() => setSearchParams(cat === 'All' ? {} : { cat })}
             className={`whitespace-nowrap rounded-full px-4 py-1.5 text-xs font-bold ${
               activeCategory === cat
                 ? 'bg-myntra-pink text-white'
