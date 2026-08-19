@@ -21,8 +21,7 @@ export const styleStudioResponse = {
           name: 'Graphic Print Oversized Tee',
           size: 'M',
           price: 899,
-          image:
-      "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp",
+          image: "https://loremflickr.com/400/600/tshirt,graphic",
           source: 'wishlist',
         },
         {
@@ -32,8 +31,7 @@ export const styleStudioResponse = {
           name: 'Loose Fit Cargo Trousers',
           size: '32',
           price: 1299,
-          image:
-      "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/1.webp",
+          image: "https://loremflickr.com/400/600/cargo,trousers",
           source: 'wishlist',
         },
         {
@@ -43,8 +41,7 @@ export const styleStudioResponse = {
           name: 'Court Classic Sneakers',
           size: 'UK 8',
           price: 1299,
-          image:
-      "https://cdn.dummyjson.com/product-images/beauty/powder-canister/1.webp",
+          image: "https://loremflickr.com/400/600/sneakers,shoes",
           source: 'catalog_recommendation',
         },
       ],
@@ -62,8 +59,7 @@ export const styleStudioResponse = {
           name: 'Slim Fit Linen Shirt',
           size: 'M',
           price: 1499,
-          image:
-      "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/1.webp",
+          image: "https://loremflickr.com/400/600/linen,shirt",
           source: 'wishlist',
         },
         {
@@ -73,8 +69,7 @@ export const styleStudioResponse = {
           name: 'Tapered Chino Trousers',
           size: '32',
           price: 1799,
-          image:
-      "https://cdn.dummyjson.com/product-images/beauty/red-nail-polish/1.webp",
+          image: "https://loremflickr.com/400/600/chino,trousers",
           source: 'catalog_recommendation',
         },
         {
@@ -84,8 +79,7 @@ export const styleStudioResponse = {
           name: 'Leather Derby Shoes',
           size: 'UK 8',
           price: 899,
-          image:
-      "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/1.webp",
+          image: "https://loremflickr.com/400/600/derby,shoes",
           source: 'wishlist',
         },
       ],
@@ -102,8 +96,7 @@ export const wishlistItems = [
     mrp: 1499,
     discount: 40,
     size: 'M',
-    image:
-      "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/1.webp",
+    image: "https://loremflickr.com/400/600/tshirt,graphic",
   },
   {
     id: 'w_2',
@@ -113,8 +106,7 @@ export const wishlistItems = [
     mrp: 2199,
     discount: 41,
     size: '32',
-    image:
-      "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/1.webp",
+    image: "https://loremflickr.com/400/600/cargo,trousers",
   },
   {
     id: 'w_3',
@@ -124,8 +116,7 @@ export const wishlistItems = [
     mrp: 2299,
     discount: 34,
     size: 'M',
-    image:
-      "https://cdn.dummyjson.com/product-images/fragrances/dolce-shine-eau-de/1.webp",
+    image: "https://loremflickr.com/400/600/linen,shirt",
   },
   {
     id: 'w_4',
@@ -135,8 +126,7 @@ export const wishlistItems = [
     mrp: 1999,
     discount: 55,
     size: 'UK 8',
-    image:
-      "https://cdn.dummyjson.com/product-images/fragrances/gucci-bloom-eau-de/1.webp",
+    image: "https://loremflickr.com/400/600/derby,shoes",
   },
   {
     id: 'w_5',
@@ -146,8 +136,7 @@ export const wishlistItems = [
     mrp: 1795,
     discount: 33,
     size: 'M',
-    image:
-      "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-bed/1.webp",
+    image: "https://loremflickr.com/400/600/gym,shorts",
   },
   {
     id: 'w_6',
@@ -157,24 +146,23 @@ export const wishlistItems = [
     mrp: 2990,
     discount: 33,
     size: 'M',
-    image:
-      "https://cdn.dummyjson.com/product-images/furniture/annibale-colombo-sofa/1.webp",
+    image: "https://loremflickr.com/400/600/polo,shirt",
   },
 ]
 
 export const catalogProducts = [
-  { id: 'c_1', brand: 'Roadster', name: 'Printed Round Neck T-shirt', price: 599, mrp: 999, discount: 40, size: 'M', category: 'Men', image: 'https://picsum.photos/seed/c_1/400/600' },
-  { id: 'c_2', brand: 'Highlander', name: 'Slim Fit Jeans', price: 1199, mrp: 1999, discount: 40, size: '32', category: 'Men', image: 'https://picsum.photos/seed/c_2/400/600' },
-  { id: 'c_3', brand: 'Puma', name: 'Running Shoes', price: 2499, mrp: 3999, discount: 37, size: 'UK 9', category: 'Men', image: 'https://picsum.photos/seed/c_3/400/600' },
-  { id: 'c_4', brand: 'H&M', name: 'Cotton Casual Shirt', price: 899, mrp: 1499, discount: 40, size: 'M', category: 'Men', image: 'https://picsum.photos/seed/c_4/400/600' },
-  { id: 'c_5', brand: 'Mango', name: 'Floral Wrap Dress', price: 1899, mrp: 2999, discount: 36, size: 'S', category: 'Women', image: 'https://picsum.photos/seed/c_5/400/600' },
-  { id: 'c_6', brand: 'Zara', name: 'High Waist Trousers', price: 1599, mrp: 2599, discount: 38, size: 'M', category: 'Women', image: 'https://picsum.photos/seed/c_6/400/600' },
-  { id: 'c_7', brand: 'Levis', name: 'Denim Jacket', price: 2299, mrp: 3499, discount: 34, size: 'M', category: 'Women', image: 'https://picsum.photos/seed/c_7/400/600' },
-  { id: 'c_8', brand: 'Marks & Spencer', name: 'Linen Kurti', price: 1299, mrp: 1999, discount: 35, size: 'M', category: 'Women', image: 'https://picsum.photos/seed/c_8/400/600' },
-  { id: 'c_9', brand: 'Nike', name: 'Boys Sports T-shirt', price: 799, mrp: 1299, discount: 38, size: '8-9Y', category: 'Kids', image: 'https://picsum.photos/seed/c_9/400/600' },
-  { id: 'c_10', brand: 'Peppermint', name: 'Girls Denim Dungarees', price: 999, mrp: 1599, discount: 37, size: '6-7Y', category: 'Kids', image: 'https://picsum.photos/seed/c_10/400/600' },
-  { id: 'c_11', brand: 'Maybelline', name: 'Fit Me Foundation', price: 449, mrp: 699, discount: 35, size: '30ml', category: 'Beauty', image: 'https://picsum.photos/seed/c_11/400/600' },
-  { id: 'c_12', brand: 'Westside Home', name: 'Cotton Bedsheet Set', price: 1299, mrp: 2199, discount: 40, size: 'King', category: 'Home', image: 'https://picsum.photos/seed/c_12/400/600' },
+  { id: 'c_1', brand: 'Roadster', name: 'Printed Round Neck T-shirt', price: 599, mrp: 999, discount: 40, size: 'M', category: 'Men', image: 'https://loremflickr.com/400/600/tshirt,round-neck' },
+  { id: 'c_2', brand: 'Highlander', name: 'Slim Fit Jeans', price: 1199, mrp: 1999, discount: 40, size: '32', category: 'Men', image: 'https://loremflickr.com/400/600/jeans,denim' },
+  { id: 'c_3', brand: 'Puma', name: 'Running Shoes', price: 2499, mrp: 3999, discount: 37, size: 'UK 9', category: 'Men', image: 'https://loremflickr.com/400/600/running,shoes' },
+  { id: 'c_4', brand: 'H&M', name: 'Cotton Casual Shirt', price: 899, mrp: 1499, discount: 40, size: 'M', category: 'Men', image: 'https://loremflickr.com/400/600/casual,shirt' },
+  { id: 'c_5', brand: 'Mango', name: 'Floral Wrap Dress', price: 1899, mrp: 2999, discount: 36, size: 'S', category: 'Women', image: 'https://loremflickr.com/400/600/floral,dress' },
+  { id: 'c_6', brand: 'Zara', name: 'High Waist Trousers', price: 1599, mrp: 2599, discount: 38, size: 'M', category: 'Women', image: 'https://loremflickr.com/400/600/trousers,women' },
+  { id: 'c_7', brand: 'Levis', name: 'Denim Jacket', price: 2299, mrp: 3499, discount: 34, size: 'M', category: 'Women', image: 'https://loremflickr.com/400/600/denim,jacket' },
+  { id: 'c_8', brand: 'Marks & Spencer', name: 'Linen Kurti', price: 1299, mrp: 1999, discount: 35, size: 'M', category: 'Women', image: 'https://loremflickr.com/400/600/kurti,linen' },
+  { id: 'c_9', brand: 'Nike', name: 'Boys Sports T-shirt', price: 799, mrp: 1299, discount: 38, size: '8-9Y', category: 'Kids', image: 'https://loremflickr.com/400/600/kids,tshirt' },
+  { id: 'c_10', brand: 'Peppermint', name: 'Girls Denim Dungarees', price: 999, mrp: 1599, discount: 37, size: '6-7Y', category: 'Kids', image: 'https://loremflickr.com/400/600/kids,dungarees' },
+  { id: 'c_11', brand: 'Maybelline', name: 'Fit Me Foundation', price: 449, mrp: 699, discount: 35, size: '30ml', category: 'Beauty', image: 'https://loremflickr.com/400/600/makeup,foundation' },
+  { id: 'c_12', brand: 'Westside Home', name: 'Cotton Bedsheet Set', price: 1299, mrp: 2199, discount: 40, size: 'King', category: 'Home', image: 'https://loremflickr.com/400/600/bedsheet,cotton' },
 ]
 
 export const formatINR = (value) => `₹${value.toLocaleString('en-IN')}`

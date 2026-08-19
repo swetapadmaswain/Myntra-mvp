@@ -11,8 +11,7 @@ export const boughtItems = [
     category: 'Bottom',
     style: 'casual',
     boughtWhen: 'June',
-    image:
-      "https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/1.webp",
+    image: "https://loremflickr.com/400/600/black,jeans",
     source: 'bought',
   },
   {
@@ -25,8 +24,7 @@ export const boughtItems = [
     category: 'Top',
     style: 'casual',
     boughtWhen: 'May',
-    image:
-      "https://cdn.dummyjson.com/product-images/beauty/eyeshadow-palette-with-mirror/1.webp",
+    image: "https://loremflickr.com/400/600/white,tshirt",
     source: 'bought',
   },
   {
@@ -39,8 +37,7 @@ export const boughtItems = [
     category: 'Bottom',
     style: 'formal',
     boughtWhen: 'April',
-    image:
-      "https://cdn.dummyjson.com/product-images/beauty/powder-canister/1.webp",
+    image: "https://loremflickr.com/400/600/formal,trousers",
     source: 'bought',
   },
 ]
@@ -55,8 +52,7 @@ export const trendingBasics = [
     size: 'UK 8',
     category: 'Footwear',
     style: 'casual',
-    image:
-      "https://cdn.dummyjson.com/product-images/beauty/red-lipstick/1.webp",
+    image: "https://loremflickr.com/400/600/white,sneakers",
     source: 'trending_basic',
   },
   {
@@ -68,8 +64,7 @@ export const trendingBasics = [
     size: '32',
     category: 'Bottom',
     style: 'casual',
-    image:
-      "https://cdn.dummyjson.com/product-images/beauty/red-nail-polish/1.webp",
+    image: "https://loremflickr.com/400/600/blue,denim",
     source: 'trending_basic',
   },
   {
@@ -81,8 +76,7 @@ export const trendingBasics = [
     size: 'UK 8',
     category: 'Footwear',
     style: 'formal',
-    image:
-      "https://cdn.dummyjson.com/product-images/fragrances/calvin-klein-ck-one/1.webp",
+    image: "https://loremflickr.com/400/600/oxford,shoes",
     source: 'trending_basic',
   },
   {
@@ -94,8 +88,7 @@ export const trendingBasics = [
     size: '32',
     category: 'Bottom',
     style: 'formal',
-    image:
-      "https://cdn.dummyjson.com/product-images/fragrances/chanel-coco-noir-eau-de/1.webp",
+    image: "https://loremflickr.com/400/600/beige,chino",
     source: 'trending_basic',
   },
   {
@@ -107,8 +100,7 @@ export const trendingBasics = [
     size: 'M',
     category: 'Top',
     style: 'sporty',
-    image:
-      "https://cdn.dummyjson.com/product-images/fragrances/dior-j'adore/1.webp",
+    image: "https://loremflickr.com/400/600/sports,tshirt",
     source: 'trending_basic',
   },
 ]
