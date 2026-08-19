@@ -67,7 +67,7 @@ function NudgeCard() {
           <div key={item.id} className="w-16 shrink-0">
             <ProductImage
               src={item.image}
-              alt={item.category}
+              alt={`${item.brand} ${item.name}`}
               className="aspect-[3/4] w-full rounded-lg"
             />
             <p className="mt-1 truncate text-[9px] text-myntra-grey">{item.category}</p>

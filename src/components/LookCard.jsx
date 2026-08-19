@@ -22,7 +22,7 @@ function ItemThumb({ item }) {
       <div className="relative overflow-hidden rounded-xl bg-neutral-100 shadow-card">
         <ProductImage
           src={item.image}
-          alt={item.category}
+          alt={`${item.brand} ${item.name}`}
           className="h-28 w-full"
         />
         {badge && (
