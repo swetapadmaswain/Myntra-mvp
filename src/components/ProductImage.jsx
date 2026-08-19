@@ -1,14 +1,17 @@
 import { useState } from 'react'
+import { Image as ImageIcon } from 'lucide-react'
 
 export default function ProductImage({ src, alt, className = '' }) {
   const [failed, setFailed] = useState(false)
 
   if (failed) {
+    const label = (alt || '').split(' ').slice(0, 2).join(' ')
     return (
       <div
-        className={`flex items-center justify-center bg-gradient-to-br from-neutral-200 to-neutral-300 text-[10px] font-semibold uppercase tracking-widest text-neutral-500 ${className}`}
+        className={`flex flex-col items-center justify-center gap-2 bg-gradient-to-br from-neutral-100 to-neutral-200 p-2 text-center text-[10px] font-semibold uppercase tracking-wider text-neutral-500 ${className}`}
       >
-        {alt}
+        <ImageIcon size={20} strokeWidth={1.5} />
+        <span className="line-clamp-2">{label}</span>
       </div>
     )
   }

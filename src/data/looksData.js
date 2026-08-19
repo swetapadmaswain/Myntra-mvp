@@ -12,7 +12,7 @@ export const boughtItems = [
     style: 'casual',
     boughtWhen: 'June',
     image:
-      'https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=600&q=80',
+      'https://picsum.photos/seed/l_1/400/600',
     source: 'bought',
   },
   {
@@ -26,7 +26,7 @@ export const boughtItems = [
     style: 'casual',
     boughtWhen: 'May',
     image:
-      'https://images.unsplash.com/photo-1581655353564-daba971d8f6d?auto=format&fit=crop&w=600&q=80',
+      'https://picsum.photos/seed/l_2/400/600',
     source: 'bought',
   },
   {
@@ -40,7 +40,7 @@ export const boughtItems = [
     style: 'formal',
     boughtWhen: 'April',
     image:
-      'https://images.unsplash.com/photo-1594938298603-c8148c472f9c?auto=format&fit=crop&w=600&q=80',
+      'https://picsum.photos/seed/l_3/400/600',
     source: 'bought',
   },
 ]
@@ -56,7 +56,7 @@ export const trendingBasics = [
     category: 'Footwear',
     style: 'casual',
     image:
-      'https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=600&q=80',
+      'https://picsum.photos/seed/l_4/400/600',
     source: 'trending_basic',
   },
   {
@@ -69,7 +69,7 @@ export const trendingBasics = [
     category: 'Bottom',
     style: 'casual',
     image:
-      'https://images.unsplash.com/photo-1542272454315-4c01d7abdf4a?auto=format&fit=crop&w=600&q=80',
+      'https://picsum.photos/seed/l_5/400/600',
     source: 'trending_basic',
   },
   {
@@ -82,7 +82,7 @@ export const trendingBasics = [
     category: 'Footwear',
     style: 'formal',
     image:
-      'https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=600&q=80',
+      'https://picsum.photos/seed/l_6/400/600',
     source: 'trending_basic',
   },
   {
@@ -95,7 +95,7 @@ export const trendingBasics = [
     category: 'Bottom',
     style: 'formal',
     image:
-      'https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=600&q=80',
+      'https://picsum.photos/seed/l_7/400/600',
     source: 'trending_basic',
   },
   {
@@ -108,7 +108,7 @@ export const trendingBasics = [
     category: 'Top',
     style: 'sporty',
     image:
-      'https://images.unsplash.com/photo-1581655353564-daba971d8f6d?auto=format&fit=crop&w=600&q=80',
+      'https://picsum.photos/seed/l_8/400/600',
     source: 'trending_basic',
   },
 ]

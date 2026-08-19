@@ -22,7 +22,7 @@ export const styleStudioResponse = {
           size: 'M',
           price: 899,
           image:
-            'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=600&q=80',
+            'https://picsum.photos/seed/w_1/400/600',
           source: 'wishlist',
         },
         {
@@ -33,7 +33,7 @@ export const styleStudioResponse = {
           size: '32',
           price: 1299,
           image:
-            'https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=600&q=80',
+            'https://picsum.photos/seed/w_2/400/600',
           source: 'wishlist',
         },
         {
@@ -44,7 +44,7 @@ export const styleStudioResponse = {
           size: 'UK 8',
           price: 1299,
           image:
-            'https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=600&q=80',
+            'https://picsum.photos/seed/w_3/400/600',
           source: 'catalog_recommendation',
         },
       ],
@@ -63,7 +63,7 @@ export const styleStudioResponse = {
           size: 'M',
           price: 1499,
           image:
-            'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=600&q=80',
+            'https://picsum.photos/seed/w_4/400/600',
           source: 'wishlist',
         },
         {
@@ -74,7 +74,7 @@ export const styleStudioResponse = {
           size: '32',
           price: 1799,
           image:
-            'https://images.unsplash.com/photo-1473966968600-fa801b869a1a?auto=format&fit=crop&w=600&q=80',
+            'https://picsum.photos/seed/w_5/400/600',
           source: 'catalog_recommendation',
         },
         {
@@ -85,7 +85,7 @@ export const styleStudioResponse = {
           size: 'UK 8',
           price: 899,
           image:
-            'https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=600&q=80',
+            'https://picsum.photos/seed/w_6/400/600',
           source: 'wishlist',
         },
       ],
@@ -103,7 +103,7 @@ export const wishlistItems = [
     discount: 40,
     size: 'M',
     image:
-      'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=600&q=80',
+      'https://picsum.photos/seed/w_7/400/600',
   },
   {
     id: 'w_2',
@@ -114,7 +114,7 @@ export const wishlistItems = [
     discount: 41,
     size: '32',
     image:
-      'https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?auto=format&fit=crop&w=600&q=80',
+      'https://picsum.photos/seed/w_8/400/600',
   },
   {
     id: 'w_3',
@@ -125,7 +125,7 @@ export const wishlistItems = [
     discount: 34,
     size: 'M',
     image:
-      'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?auto=format&fit=crop&w=600&q=80',
+      'https://picsum.photos/seed/w_9/400/600',
   },
   {
     id: 'w_4',
@@ -136,7 +136,7 @@ export const wishlistItems = [
     discount: 55,
     size: 'UK 8',
     image:
-      'https://images.unsplash.com/photo-1533867617858-e7b97e060509?auto=format&fit=crop&w=600&q=80',
+      'https://picsum.photos/seed/w_10/400/600',
   },
   {
     id: 'w_5',
@@ -147,7 +147,7 @@ export const wishlistItems = [
     discount: 33,
     size: 'M',
     image:
-      'https://images.unsplash.com/photo-1591195853828-11db59a44f6b?auto=format&fit=crop&w=600&q=80',
+      'https://picsum.photos/seed/w_11/400/600',
   },
   {
     id: 'w_6',
@@ -158,7 +158,7 @@ export const wishlistItems = [
     discount: 33,
     size: 'M',
     image:
-      'https://images.unsplash.com/photo-1516826957135-700dedea698c?auto=format&fit=crop&w=600&q=80',
+      'https://picsum.photos/seed/w_12/400/600',
   },
 ]
 
