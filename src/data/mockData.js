@@ -136,7 +136,7 @@ export const wishlistItems = [
     mrp: 1795,
     discount: 33,
     size: 'M',
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Jeans%202009.jpg?width=500",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Customised%20cut-off%20denim%20shorts%20with%20peace%20symbols%20and%20slogans,%20American,%201990s.jpg?width=500",
   },
   {
     id: 'w_6',
