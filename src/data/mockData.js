@@ -136,7 +136,7 @@ export const wishlistItems = [
     mrp: 1795,
     discount: 33,
     size: 'M',
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Cargo%20pants%20001.jpg?width=500",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Jeans%202009.jpg?width=500",
   },
   {
     id: 'w_6',
@@ -156,7 +156,7 @@ export const catalogProducts = [
   { id: 'c_3', brand: 'Puma', name: 'Running Shoes', price: 2499, mrp: 3999, discount: 37, size: 'UK 9', category: 'Men', image: 'https://cdn.dummyjson.com/product-images/mens-shoes/sports-sneakers-off-white-&-red/1.webp' },
   { id: 'c_4', brand: 'H&M', name: 'Cotton Casual Shirt', price: 899, mrp: 1499, discount: 40, size: 'M', category: 'Men', image: 'https://cdn.dummyjson.com/product-images/mens-shirts/men-check-shirt/1.webp' },
   { id: 'c_5', brand: 'Mango', name: 'Floral Wrap Dress', price: 1899, mrp: 2999, discount: 36, size: 'S', category: 'Women', image: 'https://cdn.dummyjson.com/product-images/womens-dresses/dress-pea/1.webp' },
-  { id: 'c_6', brand: 'Zara', name: 'High Waist Trousers', price: 1599, mrp: 2599, discount: 38, size: 'M', category: 'Women', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Cargo%20pants%20001.jpg?width=500' },
+  { id: 'c_6', brand: 'Zara', name: 'High Waist Trousers', price: 1599, mrp: 2599, discount: 38, size: 'M', category: 'Women', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Cargo%20pants%20002.jpg?width=500' },
   { id: 'c_7', brand: 'Levis', name: 'Denim Jacket', price: 2299, mrp: 3499, discount: 34, size: 'M', category: 'Women', image: 'https://commons.wikimedia.org/wiki/Special:FilePath/2002%20Junya%20Watanabe%20for%20Comme%20des%20Gar%C3%A7ons%20jacket%2C%20blue%20denim%20jeans%20patchwork%2001.jpg?width=500' },
   { id: 'c_8', brand: 'Marks & Spencer', name: 'Linen Kurti', price: 1299, mrp: 1999, discount: 35, size: 'M', category: 'Women', image: 'https://cdn.dummyjson.com/product-images/tops/gray-dress/1.webp' },
   { id: 'c_9', brand: 'Nike', name: 'Boys Sports T-shirt', price: 799, mrp: 1299, discount: 38, size: '8-9Y', category: 'Kids', image: 'https://cdn.dummyjson.com/product-images/mens-shirts/man-short-sleeve-shirt/1.webp' },

@@ -37,7 +37,7 @@ export const boughtItems = [
     category: 'Bottom',
     style: 'formal',
     boughtWhen: 'April',
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Cargo%20pants%20001.jpg?width=500",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Famous%20Cargo%20Pants.png?width=500",
     source: 'bought',
   },
 ]
@@ -88,7 +88,7 @@ export const trendingBasics = [
     size: '32',
     category: 'Bottom',
     style: 'formal',
-    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Cargo%20pants%20001.jpg?width=500",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Cargo%20pants%20002.jpg?width=500",
     source: 'trending_basic',
   },
   {
