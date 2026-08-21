@@ -151,9 +151,10 @@ export function buildLooks(wishlist) {
   if (!wishlist.length) return []
 
   const looks = []
+  const seenCombos = new Set()
   const maxLooks = 3
 
-  for (let idx = 0; idx < Math.min(wishlist.length, maxLooks); idx++) {
+  for (let idx = 0; idx < wishlist.length && looks.length < maxLooks; idx++) {
     const seedRaw = wishlist[idx]
     const seed = {
       ...seedRaw,
@@ -173,6 +174,10 @@ export function buildLooks(wishlist) {
         lookItems.push(item)
       }
     }
+
+    const combo = lookItems.map((i) => i.id).sort().join('|')
+    if (seenCombos.has(combo)) continue
+    seenCombos.add(combo)
 
     const bought = lookItems.find((i) => i.source === 'bought')
     const trending = lookItems.find((i) => i.source === 'trending_basic')
