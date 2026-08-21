@@ -48,10 +48,10 @@ function NudgeCard() {
             New in Wishlist
           </p>
           <h2 className="text-sm font-extrabold leading-5 text-myntra-dark">
-            Style Studio is here
+            Your personal wishlist style studio is here
           </h2>
           <p className="mt-0.5 text-xs leading-4 text-myntra-grey">
-            Build complete outfits from your saved items. Tap to explore.
+            Your vibe is trending—let's pull together an iconic fit straight from your wishlist.
           </p>
           <button
             onClick={() => navigate('/wishlist')}
