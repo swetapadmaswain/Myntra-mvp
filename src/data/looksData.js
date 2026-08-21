@@ -11,7 +11,7 @@ export const boughtItems = [
     category: 'Bottom',
     style: 'casual',
     boughtWhen: 'June',
-    image: "https://loremflickr.com/400/600/black,jeans",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Jeans%202009.jpg?width=500",
     source: 'bought',
   },
   {
@@ -24,7 +24,7 @@ export const boughtItems = [
     category: 'Top',
     style: 'casual',
     boughtWhen: 'May',
-    image: "https://loremflickr.com/400/600/white,tshirt",
+    image: "https://cdn.dummyjson.com/product-images/mens-shirts/man-short-sleeve-shirt/1.webp",
     source: 'bought',
   },
   {
@@ -37,7 +37,7 @@ export const boughtItems = [
     category: 'Bottom',
     style: 'formal',
     boughtWhen: 'April',
-    image: "https://loremflickr.com/400/600/formal,trousers",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Cargo%20pants%20001.jpg?width=500",
     source: 'bought',
   },
 ]
@@ -52,7 +52,7 @@ export const trendingBasics = [
     size: 'UK 8',
     category: 'Footwear',
     style: 'casual',
-    image: "https://loremflickr.com/400/600/white,sneakers",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/A%20pair%20of%20white%20shoes.jpg?width=500",
     source: 'trending_basic',
   },
   {
@@ -64,7 +64,7 @@ export const trendingBasics = [
     size: '32',
     category: 'Bottom',
     style: 'casual',
-    image: "https://loremflickr.com/400/600/blue,denim",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Jeans%202009.jpg?width=500",
     source: 'trending_basic',
   },
   {
@@ -76,7 +76,7 @@ export const trendingBasics = [
     size: 'UK 8',
     category: 'Footwear',
     style: 'formal',
-    image: "https://loremflickr.com/400/600/oxford,shoes",
+    image: "https://cdn.dummyjson.com/product-images/mens-shoes/nike-air-jordan-1-red-and-black/1.webp",
     source: 'trending_basic',
   },
   {
@@ -88,7 +88,7 @@ export const trendingBasics = [
     size: '32',
     category: 'Bottom',
     style: 'formal',
-    image: "https://loremflickr.com/400/600/beige,chino",
+    image: "https://commons.wikimedia.org/wiki/Special:FilePath/Cargo%20pants%20001.jpg?width=500",
     source: 'trending_basic',
   },
   {
@@ -100,7 +100,7 @@ export const trendingBasics = [
     size: 'M',
     category: 'Top',
     style: 'sporty',
-    image: "https://loremflickr.com/400/600/sports,tshirt",
+    image: "https://cdn.dummyjson.com/product-images/mens-shirts/gigabyte-aorus-men-tshirt/1.webp",
     source: 'trending_basic',
   },
 ]

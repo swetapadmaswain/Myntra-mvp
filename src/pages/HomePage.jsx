@@ -78,17 +78,52 @@ function NudgeCard() {
   )
 }
 
+const categoryTiles = [
+  {
+    label: 'Men',
+    image: 'https://cdn.dummyjson.com/product-images/mens-shirts/men-check-shirt/1.webp',
+  },
+  {
+    label: 'Women',
+    image: 'https://cdn.dummyjson.com/product-images/womens-dresses/dress-pea/1.webp',
+  },
+  {
+    label: 'Kids',
+    image: 'https://cdn.dummyjson.com/product-images/tops/blue-frock/1.webp',
+  },
+  {
+    label: 'Home',
+    image: 'https://cdn.dummyjson.com/product-images/home-decoration/table-lamp/1.webp',
+  },
+  {
+    label: 'Beauty',
+    image: 'https://cdn.dummyjson.com/product-images/beauty/red-lipstick/1.webp',
+  },
+  {
+    label: 'Accessories',
+    image: 'https://cdn.dummyjson.com/product-images/sunglasses/classic-sun-glasses/1.webp',
+  },
+]
+
 function CategoryGrid() {
-  const labels = ['Men', 'Women', 'Kids', 'Home', 'Beauty', 'Accessories']
   return (
     <div className="grid grid-cols-3 gap-2 px-4 py-4">
-      {labels.map((label) => (
+      {categoryTiles.map(({ label, image }) => (
         <Link
           key={label}
           to={`/categories?cat=${label}`}
-          className="flex aspect-[4/3] items-center justify-center rounded-xl bg-gradient-to-br from-neutral-200 to-neutral-300 text-xs font-bold text-myntra-dark active:scale-95 transition-transform"
+          className="group relative aspect-[4/3] overflow-hidden rounded-xl bg-neutral-200 active:scale-95 transition-transform"
         >
-          {label}
+          <img
+            src={image}
+            alt={label}
+            loading="lazy"
+            className="h-full w-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent" />
+          <span className="absolute bottom-1.5 left-2 text-xs font-bold text-white drop-shadow">
+            {label}
+          </span>
         </Link>
       ))}
     </div>
